@@ -1,0 +1,84 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#spcupage {
+    background-color: rgb(137, 197, 197);
+    display: flex;
+    width: fit-content;
+    /* padding: 32px; */
+}
+
+#sinfo {
+    padding: 62px;
+    background:url(/images/contact-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sinfo p {
+    margin: 22px 0;
+}
+
+#icons {
+    margin: 62px 0;
+    display: grid;
+    justify-content: center;
+}
+
+#icons i {
+    cursor: pointer;
+    margin: 22px 0;
+}
+#icons a{
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+
+#bottomicn i {
+    margin: 0 12px;
+
+}
+
+
+#scmessage {
+    padding: 62px;
+    background-color: rgb(153, 153, 199);
+}
+#scmessage button{
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid;
+}
+form input {
+    border: none;
+    border-bottom: 2px solid black;
+    margin: 12px 0px;
+    padding: 10px;
+    width: 50%;
+}
+.continpt{
+    /* display: flex; */
+}
+.continpt input{
+
+    width: 100%;
+
+}
+form textarea{
+    width: 100%;
+}
+form button{
+    margin-top: 22px;
+    width: 100%;
+}
