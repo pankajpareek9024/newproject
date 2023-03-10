@@ -13,7 +13,7 @@ $server = mysqli_connect($hostname, $username, $password, $dbname);
 
 // echo '<script>alert("hello world")</script>';
 
-$loginhtml = '<li><a href="login.php">Log.In</a></li>';
+$loginhtml = '<li><a href="login.php">Log in</a></li>';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // $rw = mysqli_fetch_assoc($reult);
         // if ($userpass == $rw["userpass"]) {
         if ($userpass == $checkedpass) {
-            $loginhtml = '<li><i class="fa-solid fa-user"></i>' . $useremail . '</li>';
+            $loginhtml = '<li><i class="fa-solid fa-user"></i> ' . $useremail . '</li>';
         } else {
             echo '<script>alert("Enter valid password")</script>';
         }
@@ -128,33 +128,54 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="facilities">
 
         <div class="box"><img src="images/library.jpg" alt="">
-            <h4>Library</h4>
-            Welcome to our school library! Our library is a vibrant and welcoming space where students, teachers, and community members can come to explore, learn, and connect with a wide range of resources.
+            <div class="text">
+
+                <h4>Library</h4>
+                Welcome to our school library! Our library is a vibrant and welcoming space where students, teachers, and community members can come to explore, learn, and connect with a wide range of resources.
+            </div>
         </div>
         <div class="box"><img src="images/computer_lab.jpg" alt="">
-            <h4>Computer lab</h4>
-            Welcome to our school's computer lab! Our computer lab is a state-of-the-art facility that provides students with access to the latest technology and software. Our lab is equipped with high-speed internet, the latest computers, and a variety of educational software programs.
+            <div class="text">
+
+                <h4>Computer lab</h4>
+                Welcome to our school's computer lab! Our computer lab is a state-of-the-art facility that provides students with access to the latest technology and software. Our lab is equipped with high-speed internet, the latest computers, and a variety of educational software programs.
+            </div>
         </div>
         <div class="box"><img src="images/science_lab.jpg" alt="">
-            <h4>Science lab</h4>
-            Our science lab is a dynamic learning environment designed to help students explore the wonders of science through hands-on experimentation and inquiry-based learning.
+            <div class="text">
+
+                <h4>Science lab</h4>
+                Our science lab is a dynamic learning environment designed to help students explore the wonders of science through hands-on experimentation and inquiry-based learning.
+            </div>
         </div>
         <div class="box"><img src="images/online_learning.jpg" alt="">
-            <h4>Online learning</h4>
-            Welcome to our school's online learning platform! Our online learning platform is a comprehensive and flexible tool designed to provide students with a rich and engaging learning experience that can be accessed from anywhere, at any time.
+            <div class="text">
+
+                <h4>Online learning</h4>
+                Welcome to our school's online learning platform! Our online learning platform is a comprehensive and flexible tool designed to provide students with a rich and engaging learning experience that can be accessed from anywhere, at any time.
+            </div>
         </div>
         <div class="box">
             <img src="images/kids-1093758__480.jpg" alt="">
-            <h4>Classrooms</h4>
-            Our classrooms are warm and welcoming spaces designed to provide students with a comfortable and supportive learning environment.
+            <div class="text">
+
+                <h4>Classrooms</h4>
+                Our classrooms are warm and welcoming spaces designed to provide students with a comfortable and supportive learning environment.
+            </div>
         </div>
         <div class="box"><img src="images/play_garden.jpg" alt="">
-            <h4>Play garden</h4>
-            At our school, we believe that play is an essential part of a child's development and learning journey. Our playground is a space where students can have fun, be active, and learn important life skills in a safe and supportive environment.
+            <div class="text">
+
+                <h4>Play garden</h4>
+                At our school, we believe that play is an essential part of a child's development and learning journey. Our playground is a space where students can have fun, be active, and learn important life skills in a safe and supportive environment.
+            </div>
         </div>
         <div class="box"><img src="images/garden.jpg" alt="">
-            <h4>Garden</h4>
-            The garden is also a space for creative expression and artistic exploration. Students are encouraged to create art and express themselves through their interactions with the garden, whether it's through drawing, painting, or other artistic mediums.
+            <div class="text">
+
+                <h4>Garden</h4>
+                The garden is also a space for creative expression and artistic exploration. Students are encouraged to create art and express themselves through their interactions with the garden, whether it's through drawing, painting, or other artistic mediums.
+            </div>
         </div>
     </div>
     <!-- form page design -->
@@ -169,7 +190,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="font">
                     <a id="instagram" href="https://www.instagram.com/pankaj._.pandat"><i class="fa-brands fa-instagram"></i></a>
                     <a id="facebook" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a id="telegram" href="https://www.telegram.com/"><i class="fa-brands fa-telegram"></i></a>
+                    <a id="telegram" href="https://web.telegram.org/"><i class="fa-brands fa-telegram"></i></a>
                 </div>
             </div>
             <div class="second_colon">
@@ -199,14 +220,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 
     <footer>
-        <div>
+        <div class="links">
             <a id="instagram" href="https://www.instagram.com/pankaj._.pandat"><i class="fa-brands fa-instagram"></i></a>
             <a id="facebook" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
             <a id="telegram" href="https://www.telegram.com/"><i class="fa-brands fa-telegram"></i></a>
         </div>
+        <div class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html"> About</a></li>
+            <li><a href="contect.html"> Contact</a></li>
+            <?php echo $loginhtml; ?>
+        </div>
         <div id="powered">
             powered by <a href="http://localhost/school_project/index.php">school.com</a>
         </div>
+
     </footer>
 </body>
 
