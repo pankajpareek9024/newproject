@@ -1,12 +1,13 @@
-*{
+* {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
+
 /* header is started */
 
-header{
+header {
     width: 100%;
     height: 8vh;
     background-color: rgb(209, 209, 209);
@@ -16,114 +17,134 @@ header{
 }
 
 
-.navbar{
+.navbar {
 
     display: flex;
 }
 
-.navbar, li a{
+.navbar,
+li a {
     font-size: large;
     padding: 1rem 1.5rem;
     color: black;
     text-decoration: none;
-    list-style:none;
+    list-style: none;
 }
-.navbar li a:hover{
+
+.navbar li a:hover {
     border-radius: 0.7rem;
-    background-color:rgb(183, 183, 196) ;
+    background-color: rgb(183, 183, 196);
 }
 
 /* Home page */
 
 .home_image {
-    background:linear-gradient(#0000004f,#0000004f),url(images/schoolkids.jpg);
+    background: linear-gradient(#0000004f, #0000004f), url(images/schoolkids.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 98.9vw;
     height: 92vh;
 }
-.headings{
+
+.headings {
     font-size: x-large;
-    margin-top:18rem;
+    margin-top: 18rem;
     margin-right: 8rem;
     float: right;
     /* position: relative; */
 }
-.headings h1,p,button{
+
+.headings h1,
+p,
+button {
     margin: 32px 0;
     color: #ffffff;
 }
-.headings button{
-    background: linear-gradient(#748fc7,#152137);
+
+.headings button {
+    background: linear-gradient(#748fc7, #152137);
     padding: 1rem 2rem;
     border-radius: 25px;
     border: 1px solid #000000;
 }
-.headings button:hover{
+
+.headings button:hover {
     color: rgb(0, 0, 0);
-    background:#798597 ;
+    background: #798597;
 }
 
-.facility{
+.facility {
     display: grid;
     font-size: xx-large;
     justify-content: center;
     margin: 32px 0px;
-    
+
 }
 
 
-.facilities{
+.facilities {
     width: 70vw;
     position: relative;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap:10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
     padding: 10px;
 
 }
 
-@media only screen and (max-width:600px){
-    .facilities{
-    grid-template-columns: repeat(1,1fr);
+@media only screen and (max-width:600px) {
+    .facilities {
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }
 
-.facilities .box{
+.facilities .box {
     /* box-shadow:5px 5px; */
     height: 500px;
     padding: 10px;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     display: grid;
     justify-content: center;
+    margin: 20px 0;
 }
-.facilities .box img{
-    width: 100%;
+
+.facilities .box img {
+    width: 90%;
     height: 16vw;
 }
 
+.facilities .box .text {
+    width: 80%;
+    margin: 20px auto;
+}
+
 /* form style */
-.contect_us{
-    margin: 62px 0px;
+.contect_us {
+    width: 70vw;
+    margin: 62px auto;
     display: grid;
     justify-content: center;
+    /* background-color: #3b94c0; */
+    display: flex;
 }
+
 .information {
     /* width: 50%; */
     display: flex;
     background-color: blue;
     color: #ffffff;
-    justify-content: space-around;    
+    justify-content: space-around;
 }
 
 .first_colon {
-    
+
     margin: 32px 64px;
 }
-.line a{
-    color:red;
+
+.line a {
+    color: red;
     font-size: xx-large;
     padding: 12px;
     margin-left: 22px;
@@ -132,91 +153,126 @@ header{
 .form_action {
     background-color: #cec3c3;
     color: blue;
-    
+
 }
 
 
-.first_colon p,h3 {
+.first_colon p,
+h3 {
     margin: 42px;
 }
 
-.second_colon { margin: 64px 64px;}
-
-.form_action {
-width: 32%;
-display: flex;
-justify-content: center;
-align-items: center;
+.second_colon {
+    margin: 64px 64px;
 }
 
-.inner{
+.form_action {
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
     width: 100%;
     height: 200px;
     display: grid;
-    justify-content:center ;
+    justify-content: center;
 }
 
 
-.form_action input{
+.form_action input {
     border: none;
     border-bottom: 1px solid #808080;
     width: 290px;
     outline: none;
-    background-color:#cec3c3 ;
+    background-color: #cec3c3;
 
 }
-.form_action label{
+
+.form_action label {
     text-transform: uppercase;
 }
 
-.font{
+.font {
     margin-left: 24px;
 }
+
 .font a {
     padding: 0px 16px;
     font-size: x-large;
 }
-#instagram{
+
+/* #instagram {
     color: red;
 }
-#facebook{
+
+#facebook {
     color: rgb(226, 226, 240);
-    /* background: #ffffff; */
 }
 
-#telegram{
-    color:#3b94c0;
-}
+#telegram {
+    color: #3b94c0;
+} */
 
-footer{
-    
+footer {
+    display: grid;
+    justify-content: center;
     text-align: center;
     width: 100%;
     height: 8vw;
     margin-top: 4%;
     background-color: #6f6d6d;
-  }
-footer  a{
-    font-size: x-large;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
 }
-footer a i{
+
+footer .links {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 22px;
+}
+
+footer .links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    color: #000000;
+    /* text-align: center; */
+    /* padding: 12px; */
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+footer .menu{
+    display: flex;
+}
+footer .menu li{
+    list-style: none;
+}
+/* 
+footer a i {
     margin-top: 52px;
-  }
-#powered a{
+} */
+
+#powered a {
     font-size: medium;
-      color: #ffffff;
-    }
-    #powered{
-        margin: 12px 0px;
-  }
+    /* color: #ffffff; */
+    text-decoration: none;
+    color: #000000;
+}
 
 
-  /* login page style */
 
-  #login_page{
+
+/* login page style */
+
+#login_page {
     width: 75%;
     background-color: #b7bcbe;
     display: flex;
@@ -227,44 +283,52 @@ footer a i{
     transform: translate(-50%, -50%);
 
 }
-#login_img img{
+
+#login_img img {
     height: 22rem;
 
 }
-#login{
+
+#login {
     text-align: center;
     padding: 10px;
 }
-#login button p{
+
+#login button p {
     color: #000000;
-    
+
 }
+
 /* #sign_in a{
     text-decoration: none;
     color: rgb(0, 0, 0);
 } */
-#sign_in  {
+#sign_in {
     text-align: right;
 }
-#login p{
+
+#login p {
     font-size: x-large;
     color: #000000;
 }
-#login input{
+
+#login input {
     border-radius: 10px;
     width: 100%;
     padding: 12px;
     margin: 8px 0px;
 
 }
-#login button{
+
+#login button {
     color: #ffffff;
-    background: linear-gradient(#748fc7,#152137);
+    background: linear-gradient(#748fc7, #152137);
     padding: .5rem 1rem;
     border-radius: 25px;
     border: 1px solid #000000;
 }
-#login button:hover{
+
+#login button:hover {
     color: rgb(0, 0, 0);
-    background:#798597 ;
+    background: #798597;
 }
